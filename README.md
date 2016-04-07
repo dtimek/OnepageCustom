@@ -1,2 +1,2 @@
 # OnepageCustom
-My attempt a a one page scroller with parallax images
+My attempt at a one page scroller with parallax images
