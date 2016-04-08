@@ -231,7 +231,7 @@ a {
 }
 
 
-/* media screens 
+/* media screens */
 @media only screen and (min-width: 800px)
 .about .description {
     width: 49.15254%;
@@ -290,4 +290,4 @@ a {
 @media only screen and (min-width: 40em)
 .teaser h1 {
     font-size: 42px;
-} */
+} 
