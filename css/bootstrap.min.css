@@ -61,10 +61,6 @@ html, body {
     text-indent: -999em;
 }
 
-@media only screen and (min-width: 40em)
-.teaser h1 {
-    font-size: 42px;
-}
 .teaser h1 {
     font-weight: 300;
     line-height: 1.125;
@@ -85,15 +81,6 @@ html, body {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 600px)
-[role=navigation] ul {
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-    padding-left: 16.94915%;
-    padding-right: 16.94915%;
-}
 [role=navigation] ul {
     width: 100%;
     float: left;
@@ -134,11 +121,6 @@ a {
     color: #f89820;
 }
 
-@media only screen and (min-width: 40em)
-.teaser h1 {
-    color: #364054;
-	font-size: 42px;
-}
 .teaser h1 {
     color: #364054;
 	font-weight: 300;
@@ -147,12 +129,6 @@ a {
     letter-spacing: -.05em;
 }
 
-
-@media only screen and (min-width: 800px)
-.teaser .page {
-    padding-top: 8em;
-    padding-bottom: 12em;
-}
 .teaser .page {
     padding-top: 5em;
     padding-bottom: 7em;
@@ -171,10 +147,6 @@ a {
     text-align: center;
 }
 
-@media only screen and (min-width: 40em)
-.teaser .design-and-build {
-    font-size: 2em;
-}
 .teaser .design-and-build {
     font-size: 1.75em;
     display: block;
@@ -206,18 +178,6 @@ a {
 
 
 /* portfolio section */
-@media (min-width: 1200px)
-.dribble {
-    width: 1170px;
-}
-@media (min-width: 992px)
-.dribble {
-    width: 970px;
-}
-@media (min-width: 768px)
-.dribble {
-    width: 750px;
-}
 .dribble {
     padding-right: 15px;
     padding-left: 15px;
@@ -250,16 +210,7 @@ a {
     clear: both;
 }
 
-
-
 /* about section */
-
-@media only screen and (min-width: 800px)
-.about {
-    background-image: #f89820 url('/images/photo.jpg');
-    background-attachment: fixed;
-}
-
 .about .content {
     max-width: 59em;
     _width: 59em;
@@ -269,6 +220,15 @@ a {
     margin-right: auto;
 }
 
+.about .description {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+}
+
+
+/* media screens  
 @media only screen and (min-width: 800px)
 .about .description {
     width: 49.15254%;
@@ -276,9 +236,56 @@ a {
     margin-right: 1.69492%;
     display: inline;
 }
-.about .description {
-    width: 100%;
+
+@media only screen and (min-width: 800px)
+.about {
+    background-image: #f89820 url('/images/photo.jpg');
+    background-attachment: fixed;
+}
+
+@media (min-width: 1200px)
+.dribble {
+    width: 1170px;
+}
+@media (min-width: 992px)
+.dribble {
+    width: 970px;
+}
+@media (min-width: 768px)
+.dribble {
+    width: 750px;
+}
+
+@media only screen and (min-width: 40em)
+.teaser .design-and-build {
+    font-size: 2em;
+}
+
+@media only screen and (min-width: 800px)
+.teaser .page {
+    padding-top: 8em;
+    padding-bottom: 12em;
+}
+
+@media only screen and (min-width: 40em)
+.teaser h1 {
+    color: #364054;
+	font-size: 42px;
+}
+
+@media only screen and (min-width: 600px)
+[role=navigation] ul {
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
+    padding-left: 16.94915%;
+    padding-right: 16.94915%;
 }
+
+
+@media only screen and (min-width: 40em)
+.teaser h1 {
+    font-size: 42px;
+}
+*/
