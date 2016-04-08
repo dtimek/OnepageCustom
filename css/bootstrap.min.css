@@ -46,6 +46,7 @@ html, body {
     /* ie8- graceful degradation */
     background-position:50% 50%\9 !important;
     height: 100%;
+    text-align: center;
 }
 
 [role=banner] {
