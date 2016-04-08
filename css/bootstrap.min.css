@@ -29,7 +29,6 @@ body {
 /* fullscreen setup */
 html, body {
     /* give this to all tags from html to .fullscreen */
-    height:100%;
 }
 
 
