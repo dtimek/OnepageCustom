@@ -145,6 +145,10 @@ a {
     margin-right: auto;
 }
 
+.teaser-button {
+    font-size: 1.25em;
+}
+
 .teaser .actions {
     margin-top: 3em;
     text-align: center;
