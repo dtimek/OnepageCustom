@@ -233,6 +233,16 @@ a {
     display: inline;
 }
 
+.contact-me {
+	text-align: center;
+}
+
+.contact-me  header {
+	margin: 0 auto;
+
+}
+
+
 
 /* media screens */
 @media only screen and (min-width: 800px)
