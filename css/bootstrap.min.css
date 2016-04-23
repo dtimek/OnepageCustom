@@ -197,8 +197,8 @@ a {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 .portfolio-item {
