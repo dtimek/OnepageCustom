@@ -339,6 +339,22 @@ a {
     font-size: 100%;
 }
 
+/* portfolio */
+
+.top-image {
+	float: left;
+    width: 73%;
+    margin-right: 20px;
+}
+
+.desc {
+	 width: 25%;
+    float: left;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+}
+
 /* media screens */
 @media only screen and (min-width: 800px)
 .about .description {
