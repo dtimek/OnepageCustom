@@ -35,6 +35,10 @@ html, body {
     height:100%;
 }
 
+img {
+	max-width:100%;
+	height:auto;
+}
 
 /* top header area */
 
@@ -410,6 +414,24 @@ a {
     padding-right: 16.94915%;
 }
 
+@media only screen and (min-width: 400px) {
+.desc {
+	width: 100%;
+    clear: left;
+    margin: auto;
+    background: rgb(255, 255, 255);
+}
+
+img {
+margin: 0 auto;
+}
+
+
+.top-image {
+margin: 0 auto;
+width: 100%}
+
+}
 
 @media only screen and (min-width: 40em)
 .teaser h1 {
