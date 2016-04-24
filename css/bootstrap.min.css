@@ -288,6 +288,32 @@ a {
     font-size: 100%;
 }
 
+.email-button, input[type=submit], button {
+    -webkit-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -o-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -webkit-box-shadow: 0 5px 0 #de7e07;
+    -moz-box-shadow: 0 5px 0 #de7e07;
+    box-shadow: 0 5px 0 #de7e07;
+    border-radius: .25em;
+    background: #f89820;
+    color: #f2f2f2;
+    padding: .5em 1em;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    word-wrap: nowrap;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.email-button {
+    font-size: 1.25em;
+}
+
+
 /* media screens */
 @media only screen and (min-width: 800px)
 .about .description {
