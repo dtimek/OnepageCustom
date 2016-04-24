@@ -343,12 +343,12 @@ a {
 
 .top-image {
 	float: left;
-    width: 73%;
+    width: 65%;
     margin-right: 20px;
 }
 
 .desc {
-	 width: 25%;
+	 width: 35%;
     float: left;
     margin: auto;
     background: rgb(255, 255, 255);
