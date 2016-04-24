@@ -414,7 +414,7 @@ a {
     padding-right: 16.94915%;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
 .desc {
 	width: 100%;
     clear: left;
@@ -426,11 +426,25 @@ img {
 margin: 0 auto;
 }
 
-
 .top-image {
 margin: 0 auto;
-width: 100%}
+width: 100%;
+}
 
+#work {
+	padding: 0;
+	text-align: center;
+}
+
+.row {
+	margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio-item {
+	width: 100%;
+	text-align:center;
+}
 }
 
 @media only screen and (min-width: 40em)
