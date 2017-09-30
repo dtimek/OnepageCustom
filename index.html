@@ -3,19 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>The Portfolio of Daniel Timek</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <script src="js/init.js"></script>
-    <script src="js/jquery-1.6.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-
+    <script src="js/jquery-2.2.3.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,24 +21,28 @@
     <![endif]-->
   </head>
 <body class='index'>
-    <div class='teaser'>
+    <div class='teaser' style="background: #f89820 url('/images/background.jpg'); background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center; text-align:center;">
       <header role='banner'>
         <h1>
           <a href="/">Daniel Timek — Product Manager and Designer — USA</a>
         </h1>
-        <nav role='navigation'>
+        <nav role='navigation'> 
           <ul>
             <li>
-              <a href="/#work">Work</a>
+              <a class="page-scroll" href="#work">Work</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="/#about">About</a>
             </li>
             <li>
               <a target="_blank" href="http://writing.mariusz.cc">Blog</a>
-            </li>
+            </li> -->
             <li>
-              <a href="/#contact">Contact</a>
+              <a class="page-scroll" href="#contact">Contact</a>
             </li>
           </ul>
           <div class='after'></div>
@@ -58,33 +59,32 @@
           web and mobile products.
         </h1>
         <div class='actions'>
-          <a class="button teaser-button" href="#work">See my work</a>
+          <a class="button teaser-button page-scroll" href="#work">See my work</a>
         </div>
       </div>
     </div>
     <a id='work'></a>
     <div class='dribble'>
      <div class="row">
-      <header>
+      <header id='work'>
         <h2>THE WORK</h2>
-        <h3>That You Heard So Much About</h3>
+        <h3 style="font-size: 18px; margin: 5px;">That You Heard So Much About</h3>
       </header>
-            <div class='col-lg-10 col-lg-offset-1 text-center' style="margin-left:14%;">
+            <div style="text-align: center;">
      <div class="row">
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
-        <div class='portfolio-item'><a href="#"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
+        <div class='portfolio-item'><a href="nj211.html"><img src="images/nj211-thumb.jpg" alt="NJ211"></a></div>
+        <div class='portfolio-item'><a href="njwine-app.html"><img src="images/wineapp-thumb.jpg" alt="NJWineApp"></a></div>
+        <div class='portfolio-item'><a href="kapower.html"><img src="images/port-thumbs_07.jpg" alt="Kapower"></a></div>
+        <div class='portfolio-item'><a href="clearlynx"><img src="images/port-thumbs_09.jpg" alt="ClearLynx"></a></div>
+        <div class='portfolio-item'><a href="gswga.html"><img src="images/port-thumbs_15.jpg" alt="GSWGA"></a></div>
+        <div class='portfolio-item'><a href="cidot.html"><img src="images/port-thumbs_16.jpg" alt="CIDOT"></a></div>
+        <div class='portfolio-item'><a href="hcci.html"><img src="images/port-thumbs_17.jpg" alt="HCCI"></a></div>
       </div>
       </div>
       <div class='after'></div>
      </div>
     </div>
-    <a id='about'></a>
+    <!--  <a id='about'></a>
     <div class='about'>
       <div class='content'>
         <div class='description'>
@@ -101,60 +101,98 @@
         <div class='after'></div>
 
       </div>
-    </div>
+    </div>-->
     <a id='contact'></a>
-    <div class='contact-me'>
+    <!-- <div class='contact-me'>
       <header>
-        <h2>Let's work together</h2>
-      </header>
-      <p>Got an interesting project and would like to work on it with me?</p>
-      <p>
-        <a class="button" href="/contact.html">Get in touch</a>
-      </p>
-      <p>
-        <small>Sorry for the placeholder form, this site is a constant work in progress. ;)</small>
-      </p>
-    </div>
-    <footer role='footer'>
-      <nav>
+        <h2>GET IN TOUCH</h2>
+      </header> 
+      </div> -->
+    <footer class="footer" style="background-color: #cccccc; text-align: center; padding:20px;" role='footer'>
+        <div style="background-color: #cccccc; padding: 10px;" class='actions'>
+        <h2>LETS CONNECT</h2>
+        <a style="color: #275419; font-size: 24px;" href="mailto:danieltimek@gmail.com?Subject=Lets%20Work%20Together" target="_top">danieltimek@gmail.com</a>
+        <p> Phone: (908) 672-1190
+
+        </div>
+        <nav class="footer-icons">
         <ul>
           <li>
-                    <a href="//twitter.com/dotmariusz"><i class='icon icon-twitter'></i>
-            </a>
+                    <a href="https://www.facebook.com/daniel.timek" target="_blank"><img class="" src="images/facebook-icon.png"></a>
     
           </li>
           <li>
-                    <a href="//dribbble.com/mariusz"><i class='icon icon-dribbble'></i>
-            </a>
+                    <a href="https://www.linkedin.com/in/danieltimek" target="_blank"><img class="" src="images/linkedin-icon.png"></a>
     
           </li>
           <li>
-                    <a href="//pinterest.com/mariusz"><i class='icon icon-pinterest'></i>
-            </a>
-    
-          </li>
-          <li>
-                    <a href="//alpha.app.net/mariusz"><i class='icon icon-app-net'></i>
-            </a>
-    
-          </li>
-          <li>
-                    <a href="//plus.google.com/104890454770498071826/posts"><i class='icon icon-gplus'></i>
-            </a>
+                    <a href="https://vimeo.com/dtimek/videos" target="_blank"><img class="" src="images/vimeo-icon.png"></a>
     
           </li>
         </ul>
       </nav>
-      <p>
-        &copy; 2013 Mariusz Ciesla.
-        <a href="https://github.com/mariusz/mariusz.cc">See the source.</a>
+      <p style="clear:left;">
+        &copy;2016 Daniel Timek. <br>
+        <a style="color: #275419;" href="https://github.com/dtimek">See the source.</a>
       </p>
       <p>
-        <a class='twitter-share-button' data-via='dotmariusz' href='https://twitter.com/share'>Tweet</a>
         <script>
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+       /* fix vertical when not overflow
+call fullscreenFix() if .fullscreen content changes */
+function fullscreenFix(){
+    var h = $('body').height();
+    // set .fullscreen height
+    $(".content-b").each(function(i){
+        if($(this).innerHeight() > h){
+            $(this).closest(".fullscreen").addClass("overflow");
+        }
+    });
+}
+$(window).resize(fullscreenFix);
+fullscreenFix();
+
+/* resize background images */
+function backgroundResize(){
+    var windowH = $(window).height();
+    $(".background").each(function(i){
+        var path = $(this);
+        // variables
+        var contW = path.width();
+        var contH = path.height();
+        var imgW = path.attr("data-img-width");
+        var imgH = path.attr("data-img-height");
+        var ratio = imgW / imgH;
+        // overflowing difference
+        var diff = parseFloat(path.attr("data-diff"));
+        diff = diff ? diff : 0;
+        // remaining height to have fullscreen image only on parallax
+        var remainingH = 0;
+        if(path.hasClass("parallax")){
+            var maxH = contH > windowH ? contH : windowH;
+            remainingH = windowH - contH;
+        }
+        // set img values depending on cont
+        imgH = contH + remainingH + diff;
+        imgW = imgH * ratio;
+        // fix when too large
+        if(contW > imgW){
+            imgW = contW;
+            imgH = imgW / ratio;
+        }
+        //
+        path.data("resized-imgW", imgW);
+        path.data("resized-imgH", imgH);
+        path.css("background-size", imgW + "px " + imgH + "px");
+    });
+}
+$(window).resize(backgroundResize);
+$(window).focus(backgroundResize);
+backgroundResize();
         </script>
       </p>
     </footer>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

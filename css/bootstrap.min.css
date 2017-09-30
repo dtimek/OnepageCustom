@@ -7,7 +7,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-body {font-family: "Varela Round",sans-serif;
+body {
+	font-family: "Varela Round",sans-serif;
     font-weight: 500;
     line-height: 1.5;
     -webkit-text-rendering: optimizeLegibility;
@@ -23,24 +24,33 @@ body {font-family: "Varela Round",sans-serif;
 
 body {
 	display: block;
-	margin: 0;
-	width:100%;
+	margin: 0 auto;
+	width: 100%;
 	height: 100%;
-
 }
 
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
 
 /* top header area */
 
 .teaser {    
 	color: #f2f2f2;
-	background: #f89820 url('../images/background.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-	text-align: center;
-	background-attachment: fixed;
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+    height: 100%;
+    text-align: center;
 }
 
 [role=banner] {
@@ -58,10 +68,6 @@ body {
     text-indent: -999em;
 }
 
-@media only screen and (min-width: 40em)
-.teaser h1 {
-    font-size: 42px;
-}
 .teaser h1 {
     font-weight: 300;
     line-height: 1.125;
@@ -82,15 +88,6 @@ body {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 600px)
-[role=navigation] ul {
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-    padding-left: 16.94915%;
-    padding-right: 16.94915%;
-}
 [role=navigation] ul {
     width: 100%;
     float: left;
@@ -131,11 +128,6 @@ a {
     color: #f89820;
 }
 
-@media only screen and (min-width: 40em)
-.teaser h1 {
-    color: #364054;
-	font-size: 42px;
-}
 .teaser h1 {
     color: #364054;
 	font-weight: 300;
@@ -144,23 +136,20 @@ a {
     letter-spacing: -.05em;
 }
 
-
-@media only screen and (min-width: 800px)
-.teaser .page {
-    padding-top: 8em;
-    padding-bottom: 12em;
-}
 .teaser .page {
     padding-top: 5em;
     padding-bottom: 7em;
 }
 .page {
     max-width: 59em;
-    width: 59em;
     padding-left: 1em;
     padding-right: 1em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.teaser-button {
+    font-size: 1.25em;
 }
 
 .teaser .actions {
@@ -168,10 +157,6 @@ a {
     text-align: center;
 }
 
-@media only screen and (min-width: 40em)
-.teaser .design-and-build {
-    font-size: 2em;
-}
 .teaser .design-and-build {
     font-size: 1.75em;
     display: block;
@@ -203,18 +188,6 @@ a {
 
 
 /* portfolio section */
-@media (min-width: 1200px)
-.dribble {
-    width: 1170px;
-}
-@media (min-width: 992px)
-.dribble {
-    width: 970px;
-}
-@media (min-width: 768px)
-.dribble {
-    width: 750px;
-}
 .dribble {
     padding-right: 15px;
     padding-left: 15px;
@@ -228,8 +201,8 @@ a {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 .portfolio-item {
@@ -247,16 +220,7 @@ a {
     clear: both;
 }
 
-
-
 /* about section */
-
-@media only screen and (min-width: 800px)
-.about {
-    background-image: #f89820 url('/images/photo.jpg');
-    background-attachment: fixed;
-}
-
 .about .content {
     max-width: 59em;
     _width: 59em;
@@ -266,6 +230,147 @@ a {
     margin-right: auto;
 }
 
+.about .description {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+}
+
+.contact-me {
+	background-color: #cccccc;
+	text-align: center;
+}
+
+.contact-me  header {
+	margin: 0 auto;
+
+}
+
+.footer{
+	text-align: center;1
+
+}
+
+.footer-icons {
+
+
+}
+
+.footer-icons {
+    max-width: 59em;
+    _width: 59em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-icons  ul {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+    text-align: center;
+}
+
+.footer-icons  li {
+    display: inline;
+    padding: 0 15px 40px;
+}
+
+.footer-icons a {
+    -webkit-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -o-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    color: #364054;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .075em;
+    font-size: 100%;
+}
+
+.email-button, input[type=submit], button {
+    -webkit-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -o-transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: background-color .5s cubic-bezier(0.25,0.46,0.45,0.94);
+    -webkit-box-shadow: 0 5px 0 #275419;
+    -moz-box-shadow: 0 5px 0 #275419;
+    box-shadow: 0 5px 0 #275419;
+    border-radius: .25em;
+    background: #6db158;
+    color: #f2f2f2;
+    padding: .5em 1em;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    word-wrap: nowrap;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.email-button {
+    font-size: 1.25em;
+}
+
+.email-button a {
+    -webkit-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -o-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    color: #275419;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .075em;
+    font-size: 100%;
+}
+
+.email-button a:hover {
+    -webkit-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -moz-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    -o-transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    transition: color .25s cubic-bezier(0.25,0.46,0.45,0.94);
+    color: #275419;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .075em;
+    font-size: 100%;
+}
+
+/* portfolio */
+
+.top-image {
+	float: left;
+    width: 65%;
+    margin-left: 20px;
+}
+
+.desc {
+	width: 30%;
+    float: left;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.innerRow  {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bottomPort {
+	margin: 0 auto;
+	width: 763px;
+	height: 200px;
+}
+
+/* media screens */
 @media only screen and (min-width: 800px)
 .about .description {
     width: 49.15254%;
@@ -273,9 +378,87 @@ a {
     margin-right: 1.69492%;
     display: inline;
 }
-.about .description {
-    width: 100%;
+
+@media only screen and (min-width: 800px)
+.about {
+    background-image: #f89820 url('/images/photo.jpg');
+    background-attachment: fixed;
+}
+
+@media (min-width: 1200px)
+.dribble {
+    width: 1170px;
+}
+@media (min-width: 992px)
+.dribble {
+    width: 970px;
+}
+@media (min-width: 768px)
+.dribble {
+    width: 750px;
+}
+
+@media only screen and (min-width: 40em)
+.teaser .design-and-build {
+    font-size: 2em;
+}
+
+@media only screen and (min-width: 800px)
+.teaser .page {
+    padding-top: 8em;
+    padding-bottom: 12em;
+}
+
+@media only screen and (min-width: 40em)
+.teaser h1 {
+    color: #364054;
+	font-size: 42px;
+}
+
+@media only screen and (min-width: 600px)
+[role=navigation] ul {
+    width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
     display: inline;
+    padding-left: 16.94915%;
+    padding-right: 16.94915%;
 }
+
+@media only screen and (max-width: 400px) {
+.desc {
+	width: 100%;
+    clear: left;
+    margin: auto;
+    background: rgb(255, 255, 255);
+}
+
+img {
+margin: 0 auto;
+}
+
+.top-image {
+margin: 0 auto;
+width: 100%;
+}
+
+#work {
+	padding: 0;
+	text-align: center;
+}
+
+.row {
+	margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio-item {
+	width: 100%;
+	text-align:center;
+}
+}
+
+@media only screen and (min-width: 40em)
+.teaser h1 {
+    font-size: 42px;
+} 
